@@ -12,17 +12,28 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="黎子豪的博客">
+        content="Javascript中的数组 - 黎子豪的博客">
     
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="「浮世景色百千年依旧，人之在世却如白露与泡影虚无」">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="操作方法
+">
+    
+    <meta property="article:published_time" content=" 2023-10-12T00:00:00Z">
+    
+    
+    <meta property="article:author" content="黎子豪">
+    
+    
+    <meta property="article:tag" content="Array">
+    
+    <meta property="article:tag" content="JavaScript">
+    
     
     <meta property="og:image" content="http://localhost:4000https://avatars.githubusercontent.com/u/102943240?s=400&u=ee753adb0657d117778affa79d076a878894feb4&v=4">
-    <meta property="og:url" content="http://localhost:4000/">
+    <meta property="og:url" content="http://localhost:4000/2023/10/12/string-number/">
     <meta property="og:site_name" content="黎子豪的博客">
 
-    <title>黎子豪的博客</title>
+    <title>Javascript中的数组 - 黎子豪的博客</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -31,7 +42,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/2023/10/12/string-number/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -67,8 +78,8 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top touch">
-        
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert" >
+    
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -195,7 +206,11 @@
   </div>
 </div>
 
-    <!-- Page Header -->
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
 
 
 
@@ -212,225 +227,404 @@
 
 
 
+<header class="intro-header style-text" >
 
-
-
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-  <div class="header-mask"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="site-heading">
-        
-          <h1>MoiBlog</h1>
-          <span class="subheading">「浮世景色百千年依旧，人之在世却如白露与泡影虚无」</span>
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=Array" title="Array">Array</a>
+                        
+                        <a class="tag" href="/archive/?tag=JavaScript" title="JavaScript">JavaScript</a>
+                        
+                    </div>
+                    <h1>Javascript中的数组</h1>
+                    
+                    <h2 class="subheading"></h2>
+                    <span class="meta">Posted by 黎子豪 on October 12, 2023</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 
 
 
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
-
-    <!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
-      
-<div class="post-preview">
-    <a href="/2024/01/10/2024/">
-        <h2 class="post-title">
-            我对2024前端的看法
-        </h2>
-        
-        <div class="post-content-preview">
-            
-                React、Vue 和 Angular 这些老牌框架依然稳居前端开发主力军的位置，不过它们也都在不断更新迭代，加入新的功能和特性，比如 React 18 中的 Concurrent Mode、Vue 3 中的 Composition API 等等。
-同时，一些新兴框架也正在崛起，比如 Svelte、Solid 等，它们凭借着轻量、高效的特点吸引了不少开发者的关注，或许在未来会成为新的主流选择...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 黎子豪 on January 10, 2024
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2023/11/05/2024/">
-        <h2 class="post-title">
-            vue-router细讲
-        </h2>
-        
-        <div class="post-content-preview">
-            
-                 vue-router细讲
-
-Vue Router 是 Vue.js 的官方路由。它与 Vue.js 核心深度集成，让用 Vue.js 构建单页应用变得轻而易举。
 
 
 
-带参数的动态路由匹配
-带参数的动态路由匹配在前端开发中，动态路由是指根据 URL 中的参数来匹配不同的路由规则。
-这可以让我们根据不同的参数来渲染不同的页面或组件。
-带参数的动态路由匹配是指在路由规则中使用占位符来匹配 UR...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 黎子豪 on November 5, 2023
-    </p>
-</div>
-<hr>
 
-<div class="post-preview">
-    <a href="/2023/11/04/2023/">
-        <h2 class="post-title">
-            箭头函数与普通函数的区别
-        </h2>
-        
-        <div class="post-content-preview">
-            
-                箭头函数（Arrow Function）与普通函数（Regular Function）在语法和功能上有一些区别。
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
+                <!-- Multi-Lingual -->
+                
 
-语法简洁性：箭头函数使用箭头（`=&gt;`）来定义函数，语法更加简洁，可以省略`function`关键字和大括号。例如：
- 
- 
- // 普通函数
- function add(a, b) {
- return a + b;
- }
+				<h2 id="操作方法">操作方法</h2>
 
- // 箭头函数
- const add =...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 黎子豪 on November 4, 2023
-    </p>
-</div>
-<hr>
+<p>数字的基本操作可以归纳为增删改查。</p>
 
-<div class="post-preview">
-    <a href="/2023/10/12/string-number/">
-        <h2 class="post-title">
-            Javascript中的数组
-        </h2>
-        
-        <div class="post-content-preview">
-            
-                操作方法
-
-数字的基本操作可以归纳为增删改查。
-
-增
-push
-push方法用于在数组的末尾添加一个或多个元素，并返回添加新元素后的数组长度。
-
-
+<h3 id="增">增</h3>
+<h4 id="push">push</h4>
+<p><code class="language-plaintext highlighter-rouge">push</code>方法用于在数组的末尾添加一个或多个元素，并返回添加新元素后的数组长度。</p>
+<pre>
+<code>
 var arr = [1,2,3];
 arr.push(4);
 console.log(arr);
+</code>
+</pre>
+<h4 id="unshift">unshift</h4>
+<p><code class="language-plaintext highlighter-rouge">unshift</code>方法用于在数组的头部添加一个或多个元素，并返回添加新元素后的数组长度。</p>
+<pre>
+<code>
+var arr = [1,2,3];
+arr.unshift(4);
+console.log(arr);
+</code>
+</pre>
+<p>####splice
+<code class="language-plaintext highlighter-rouge">splice</code>方法用于删除原数组的一部分成员，并可以在删除的位置添加入新的数组成员，返回值是被删除的元素。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5,6,7];
+arr.splice(4);
+console.log(arr);
+结果为:
+[1,2,3,4]
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// 在第三个位置添加一个元素
+fruits.splice(2, 0, "Grape");
+
+console.log(fruits); // ["Banana", "Orange", "Grape", "Apple", "Mango"]
+
+// 在数组末尾添加多个元素
+fruits.splice(fruits.length, 0, "Watermelon", "Pineapple");
+
+console.log(fruits); // ["Banana", "Orange", "Grape", "Apple", "Mango", "Watermelon", "Pineapple"]
+</code>
+</pre>
+
+<p>####concat
+<code class="language-plaintext highlighter-rouge">concat</code>方法用于连接两个或多个数组，并返回一个新的数组。</p>
+<pre>
+<code>
+var arr = [1,2,3];
+var arr2 = [4,5,6];
+arr.concat(arr2);
+console.log(arr);
+结果为:
+[1,2,3,4,5,6]
+</code>
+</pre>
+
+<h3 id="删">删</h3>
+<h4 id="pop">pop</h4>
+<p><code class="language-plaintext highlighter-rouge">pop</code>方法用于删除数组的最后一个元素，并返回删除的元素。</p>
+<pre>
+<code>
+var arr = [1,2,3];
+arr.pop();
+console.log(arr);
+//结果为:
+[1,2]
+</code>
+</pre>
+<h4 id="shift">shift</h4>
+<p><code class="language-plaintext highlighter-rouge">shift</code>方法用于删除数组的第一个元素，并返回删除的元素。</p>
+<pre>
+<code>
+var arr = [1,2,3];
+arr.shift();
+console.log(arr);
+结果为:
+[2,3]
+</code>
+</pre>
+<h4 id="slice">slice</h4>
+<p><code class="language-plaintext highlighter-rouge">slice</code>方法用于从原数组中截取一个新的数组，并返回截取后的数组。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.slice(1,3);
+console.log(arr);
+结果为:
+[2,3]
+</code>
+</pre>
+<h4 id="splice">splice</h4>
+<p><code class="language-plaintext highlighter-rouge">splice</code>方法用于删除原数组的一部分成员，并可以在删除的位置添加入新的数组成员，返回值是被删除的元素。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.splice(1,2,'a','b');
+console.log(arr);
+结果为:
+[1, 'a', 'b', 4, 5]
+</code>
+</pre>
+
+<h3 id="改">改</h3>
+
+<h4 id="splice-1">splice</h4>
+<p><code class="language-plaintext highlighter-rouge">splice</code>方法用于删除原数组的一部分成员，并可以在删除的位置添加入新的数组成员，返回值是被删除的元素。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.splice(1,2,'a','b');
+console.log(arr);
+结果为:
+[1, 'a', 'b', 4, 5]
+</code>
+</pre>
+
+<h3 id="查">查</h3>
+<h4 id="indexof">indexOf</h4>
+<p><code class="language-plaintext highlighter-rouge">indexOf</code>方法用于返回某个指定的字符串值在字符串中首次出现的位置。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.indexOf(3);
+结果为:
+2
+</code>
+</pre>
+<h4 id="lastindexof">lastIndexOf</h4>
+<p><code class="language-plaintext highlighter-rouge">lastIndexOf</code>方法用于返回某个指定的字符串值在字符串中最后出现的位置。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.lastIndexOf(3);
+结果为:
+2
+</code>
+</pre>
+<h4 id="includes">includes</h4>
+<p><code class="language-plaintext highlighter-rouge">includes</code>方法用于判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.includes(3);
+结果为
+true
+</code>
+</pre>
+<h4 id="find">find</h4>
+<p><code class="language-plaintext highlighter-rouge">find</code>方法用于找出第一个符合条件的数组成员。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.find(function(value,index,arr){
+  
+  return value&gt;3;
+
+}
+);
+结果为:
+4
+</code>
+</pre>
+<h4 id="findindex">findIndex</h4>
+<p><code class="language-plaintext highlighter-rouge">findIndex</code>方法用于找出第一个符合条件的数组成员的位置。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.findIndex(function(value,index,arr){
+  
+  return value&gt;3;
+
+}
+);
+结果为:
+3
+</code>
+</pre>
+
+<p>##排序方法</p>
+
+<h3 id="sort">sort</h3>
+<p><code class="language-plaintext highlighter-rouge">sort</code>方法用于对数组的元素进行排序，并返回数组。默认排序顺序是在将元素转换为字符串，然后比较字符串的UTF-16代码单元值序列时构建的。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.sort();
+console.log(arr);
+结果为:
+[1, 100, 2, 200, 3, 300, 4, 400, 5, 500]
+</code>
+</pre>
+<h3 id="reverse">reverse</h3>
+<p><code class="language-plaintext highlighter-rouge">reverse</code>方法用于颠倒数组中元素的顺序，并返回该数组。该方法会改变原数
+组。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.reverse();
+console.log(arr);
+结果为:
+[5, 4, 3, 2, 1]
+</code>
+</pre>
+
+<p>##迭代的方法</p>
+<h3 id="foreach">forEach</h3>
+<p><code class="language-plaintext highlighter-rouge">forEach</code>方法用于调用数组的每个元素，并将元素传递给回调函数。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.forEach(function(value,index,arr){
+  
+  console.log(value);
+
+}
+);
+结果为:
+1
+2
+3
+4
+5
+</code>
+</pre>
+<h3 id="map">map</h3>
+<p><code class="language-plaintext highlighter-rouge">map</code>方法用于调用数组的每个元素，并将元素传递给回调函数，并将回调函数的结果组成一个新数组返回。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.map(function(value,index,arr){
+  
+  return value*2;
+
+}
+
+);
+结果为:
+[2, 4, 6, 8, 10]
+</code>
+</pre>
+<h3 id="filter">filter</h3>
+<p><code class="language-plaintext highlighter-rouge">filter</code>方法用于过滤掉数组中的不符合条件的元素，并将符合条件的元素组成一个新数组返回。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.filter(function(value,index,arr){
+  
+  return value&gt;3;
+
+}
+);
+结果为:
+[4, 5]
+</code>
+</pre>
+<h3 id="some">some</h3>
+<p><code class="language-plaintext highlighter-rouge">some</code>方法用于检测数组中的元素是否满足指定条件（函数提供）。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.some(function(value,index,arr){
+  
+  return value&gt;3;
+
+}
+);
+结果为:
+true
+</code>
+</pre>
+<h3 id="every">every</h3>
+<p><code class="language-plaintext highlighter-rouge">every</code>方法用于检测数组中的元素是否都满足指定条件（函数提供）。</p>
+<pre>
+<code>
+var arr = [1,2,3,4,5];
+arr.every(function(value,index,arr){
+  
+  return value&gt;3;
+
+}
+);
+结果为:
+false
+</code>
+</pre>
 
 
-unshift
-unshift方法用于在数组的头部添加一个或多个元素，并返回添加新元素后的数组长度。
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2023/09/03/wx2020/" data-toggle="tooltip" data-placement="top" title="深入理解微信小程序---生命周期">
+                        Previous<br>
+                        <span>深入理解微信小程序---生命周期</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2023/11/04/2023/" data-toggle="tooltip" data-placement="top" title="箭头函数与普通函数的区别">
+                        Next<br>
+                        <span>箭头函数与普通函数的区别</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
 
-
-var arr = [1,2,3];...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 黎子豪 on October 12, 2023
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2023/09/03/wx2020/">
-        <h2 class="post-title">
-            深入理解微信小程序---生命周期
-        </h2>
-        
-        <div class="post-content-preview">
-            
-                首先我们得了解一下什么是微信小程序
-微信小程序是腾讯在2017年推出的无需下载就可以在微信上使用的应用程序.
-微信小程序具有以下特点:
-
-  无需下载安装即可使用
-  微信官方提供技术支持
-  微信官方提供推广渠道
-  开发成本低
-  应用场景丰富
-
-
-微信小程序的出现，改变了人们使用移动应用的方式。它让用户可以更轻松地获取和使用各种服务，也为开发者提供了新的发展机遇。
-微信小程序的生命周期...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 黎子豪 on September 3, 2023
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2017/10/06/css-complaints/">
-        <h2 class="post-title">
-            为什么 CSS 这么难学？
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Why I dislike CSS as a programming language
-        </h3>
-        
-        <div class="post-content-preview">
-            
                 
-  这篇文章转载自我在知乎上的回答
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                
 
+                
+            </div>  
 
-对我来说，CSS 难学以及烦人是因为它「出乎我意料之外的复杂」且让我觉得「定位矛盾」。
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
 
-@方应杭 老师的答案我赞了：CSS 的属性互不正交，大量的依赖与耦合难以记忆。
-
-@顾轶灵 @王成 说得也没错：CSS 的很多规则是贯彻整个体系的，而且都记在规范里了，是有规律的，你应该好好读文档而不是去瞎试。
-
-「CSS是一门正儿八经的编程语言，请拿出你学C+...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Hux on October 6, 2017
-    </p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-
-    </div>
     <!-- Sidebar Container -->
-    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-      <!-- Featured Tags -->
-      
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
 
 
 <section>
+    
+        <hr class="hidden-sm hidden-xs">
     
     <h5><a href="/archive/">FEATURED TAGS</a></h5>
     <div class="tags">
@@ -473,46 +667,8 @@ var arr = [1,2,3];...
 </section>
 
 
-      <!-- Short About -->
-      <section class="visible-md visible-lg">
-  <hr>
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-    
-    <img src="https://avatars.githubusercontent.com/u/102943240?s=400&u=ee753adb0657d117778affa79d076a878894feb4&v=4" />
-    
-    
-    <p>要做一个有 swag 的程序员 <br> React Team @ Meta</p>
-    
-    <!-- SNS Link -->
-    
-
-
-<ul class="list-inline">
-
-
-  
-  
-  
-  
-  
-  
-  <li>
-    <a target="_blank" href="https://github.com/duckiamduck">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-  
-</ul>
-  </div>
-</section>
-
-      <!-- Friends Blog -->
-      
+                <!-- Friends Blog -->
+                
 <hr>
 <h5>FRIENDS</h5>
 <ul class="list-inline">
@@ -535,21 +691,69 @@ var arr = [1,2,3];...
   
 </ul>
 
-
-      <!-- Ads -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first shot -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
-     data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+            </div>
+        </div>
     </div>
-    
-  </div>
-</div>
+</article>
 
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "黎子豪";
+    var disqus_identifier = "/2023/10/12/string number";
+    var disqus_url = "http://localhost:4000/2023/10/12/string-number/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 

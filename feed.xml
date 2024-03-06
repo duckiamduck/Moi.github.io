@@ -5,8 +5,8 @@
     <description>这里是 @Moi黎子豪 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 05 Mar 2024 14:55:32 +0800</pubDate>
-    <lastBuildDate>Tue, 05 Mar 2024 14:55:32 +0800</lastBuildDate>
+    <pubDate>Wed, 06 Mar 2024 18:56:41 +0800</pubDate>
+    <lastBuildDate>Wed, 06 Mar 2024 18:56:41 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -327,6 +327,309 @@ const router = new VueRouter({
         <guid isPermaLink="true">http://localhost:4000/2023/11/04/2023/</guid>
         
         <category>Web</category>
+        
+        <category>JavaScript</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Javascript中的数组</title>
+        <description>&lt;h2 id=&quot;操作方法&quot;&gt;操作方法&lt;/h2&gt;
+
+&lt;p&gt;数字的基本操作可以归纳为增删改查。&lt;/p&gt;
+
+&lt;h3 id=&quot;增&quot;&gt;增&lt;/h3&gt;
+&lt;h4 id=&quot;push&quot;&gt;push&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt;方法用于在数组的末尾添加一个或多个元素，并返回添加新元素后的数组长度。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3];
+arr.push(4);
+console.log(arr);
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;unshift&quot;&gt;unshift&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unshift&lt;/code&gt;方法用于在数组的头部添加一个或多个元素，并返回添加新元素后的数组长度。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3];
+arr.unshift(4);
+console.log(arr);
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;####splice
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;splice&lt;/code&gt;方法用于删除原数组的一部分成员，并可以在删除的位置添加入新的数组成员，返回值是被删除的元素。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5,6,7];
+arr.splice(4);
+console.log(arr);
+结果为:
+[1,2,3,4]
+
+const fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+
+// 在第三个位置添加一个元素
+fruits.splice(2, 0, &quot;Grape&quot;);
+
+console.log(fruits); // [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Grape&quot;, &quot;Apple&quot;, &quot;Mango&quot;]
+
+// 在数组末尾添加多个元素
+fruits.splice(fruits.length, 0, &quot;Watermelon&quot;, &quot;Pineapple&quot;);
+
+console.log(fruits); // [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Grape&quot;, &quot;Apple&quot;, &quot;Mango&quot;, &quot;Watermelon&quot;, &quot;Pineapple&quot;]
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;####concat
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;concat&lt;/code&gt;方法用于连接两个或多个数组，并返回一个新的数组。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3];
+var arr2 = [4,5,6];
+arr.concat(arr2);
+console.log(arr);
+结果为:
+[1,2,3,4,5,6]
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;删&quot;&gt;删&lt;/h3&gt;
+&lt;h4 id=&quot;pop&quot;&gt;pop&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pop&lt;/code&gt;方法用于删除数组的最后一个元素，并返回删除的元素。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3];
+arr.pop();
+console.log(arr);
+//结果为:
+[1,2]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;shift&quot;&gt;shift&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shift&lt;/code&gt;方法用于删除数组的第一个元素，并返回删除的元素。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3];
+arr.shift();
+console.log(arr);
+结果为:
+[2,3]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;slice&quot;&gt;slice&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;slice&lt;/code&gt;方法用于从原数组中截取一个新的数组，并返回截取后的数组。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.slice(1,3);
+console.log(arr);
+结果为:
+[2,3]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;splice&quot;&gt;splice&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;splice&lt;/code&gt;方法用于删除原数组的一部分成员，并可以在删除的位置添加入新的数组成员，返回值是被删除的元素。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.splice(1,2,&apos;a&apos;,&apos;b&apos;);
+console.log(arr);
+结果为:
+[1, &apos;a&apos;, &apos;b&apos;, 4, 5]
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;改&quot;&gt;改&lt;/h3&gt;
+
+&lt;h4 id=&quot;splice-1&quot;&gt;splice&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;splice&lt;/code&gt;方法用于删除原数组的一部分成员，并可以在删除的位置添加入新的数组成员，返回值是被删除的元素。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.splice(1,2,&apos;a&apos;,&apos;b&apos;);
+console.log(arr);
+结果为:
+[1, &apos;a&apos;, &apos;b&apos;, 4, 5]
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;查&quot;&gt;查&lt;/h3&gt;
+&lt;h4 id=&quot;indexof&quot;&gt;indexOf&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indexOf&lt;/code&gt;方法用于返回某个指定的字符串值在字符串中首次出现的位置。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.indexOf(3);
+结果为:
+2
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;lastindexof&quot;&gt;lastIndexOf&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lastIndexOf&lt;/code&gt;方法用于返回某个指定的字符串值在字符串中最后出现的位置。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.lastIndexOf(3);
+结果为:
+2
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;includes&quot;&gt;includes&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;includes&lt;/code&gt;方法用于判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回false。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.includes(3);
+结果为
+true
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;find&quot;&gt;find&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find&lt;/code&gt;方法用于找出第一个符合条件的数组成员。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.find(function(value,index,arr){
+  
+  return value&amp;gt;3;
+
+}
+);
+结果为:
+4
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h4 id=&quot;findindex&quot;&gt;findIndex&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;findIndex&lt;/code&gt;方法用于找出第一个符合条件的数组成员的位置。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.findIndex(function(value,index,arr){
+  
+  return value&amp;gt;3;
+
+}
+);
+结果为:
+3
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;##排序方法&lt;/p&gt;
+
+&lt;h3 id=&quot;sort&quot;&gt;sort&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sort&lt;/code&gt;方法用于对数组的元素进行排序，并返回数组。默认排序顺序是在将元素转换为字符串，然后比较字符串的UTF-16代码单元值序列时构建的。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.sort();
+console.log(arr);
+结果为:
+[1, 100, 2, 200, 3, 300, 4, 400, 5, 500]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h3 id=&quot;reverse&quot;&gt;reverse&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reverse&lt;/code&gt;方法用于颠倒数组中元素的顺序，并返回该数组。该方法会改变原数
+组。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.reverse();
+console.log(arr);
+结果为:
+[5, 4, 3, 2, 1]
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;##迭代的方法&lt;/p&gt;
+&lt;h3 id=&quot;foreach&quot;&gt;forEach&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;forEach&lt;/code&gt;方法用于调用数组的每个元素，并将元素传递给回调函数。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.forEach(function(value,index,arr){
+  
+  console.log(value);
+
+}
+);
+结果为:
+1
+2
+3
+4
+5
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h3 id=&quot;map&quot;&gt;map&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map&lt;/code&gt;方法用于调用数组的每个元素，并将元素传递给回调函数，并将回调函数的结果组成一个新数组返回。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.map(function(value,index,arr){
+  
+  return value*2;
+
+}
+
+);
+结果为:
+[2, 4, 6, 8, 10]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h3 id=&quot;filter&quot;&gt;filter&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filter&lt;/code&gt;方法用于过滤掉数组中的不符合条件的元素，并将符合条件的元素组成一个新数组返回。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.filter(function(value,index,arr){
+  
+  return value&amp;gt;3;
+
+}
+);
+结果为:
+[4, 5]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h3 id=&quot;some&quot;&gt;some&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;some&lt;/code&gt;方法用于检测数组中的元素是否满足指定条件（函数提供）。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.some(function(value,index,arr){
+  
+  return value&amp;gt;3;
+
+}
+);
+结果为:
+true
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h3 id=&quot;every&quot;&gt;every&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;every&lt;/code&gt;方法用于检测数组中的元素是否都满足指定条件（函数提供）。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+var arr = [1,2,3,4,5];
+arr.every(function(value,index,arr){
+  
+  return value&amp;gt;3;
+
+}
+);
+结果为:
+false
+&lt;/code&gt;
+&lt;/pre&gt;
+</description>
+        <pubDate>Thu, 12 Oct 2023 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2023/10/12/string-number/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023/10/12/string-number/</guid>
+        
+        <category>Array</category>
         
         <category>JavaScript</category>
         
