@@ -5,9 +5,25 @@
     <description>这里是 @Moi黎子豪 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 06 Mar 2024 19:00:51 +0800</pubDate>
-    <lastBuildDate>Wed, 06 Mar 2024 19:00:51 +0800</lastBuildDate>
+    <pubDate>Thu, 07 Mar 2024 16:32:31 +0800</pubDate>
+    <lastBuildDate>Thu, 07 Mar 2024 16:32:31 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>对未来的自己的要求</title>
+        <description>&lt;div align=&quot;life&quot;&gt; 
+&lt;iframe frameborder=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;400&quot; height=&quot;140&quot; src=&quot;https://music.163.com/outchain/player?type=2&amp;amp;id=1831400576&amp;amp;auto=1&amp;amp;height=66&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;你有没有更爱自己的家人&quot;&gt;你有没有更爱自己的家人&lt;/h1&gt;
+</description>
+        <pubDate>Mon, 12 Jun 2034 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2034/06/12/Future/</link>
+        <guid isPermaLink="true">http://localhost:4000/2034/06/12/Future/</guid>
+        
+        <category>life</category>
+        
+        
+      </item>
     
       <item>
         <title>我对2024前端的看法</title>
@@ -38,6 +54,225 @@ TypeScript 的使用也将更加普及，它可以帮助我们提高代码的类
         <pubDate>Wed, 10 Jan 2024 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2024/01/10/2024/</link>
         <guid isPermaLink="true">http://localhost:4000/2024/01/10/2024/</guid>
+        
+        <category>Web</category>
+        
+        <category>JavaScript</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>面试题</title>
+        <description>&lt;h1 id=&quot;1浏览器&quot;&gt;1.浏览器&lt;/h1&gt;
+
+&lt;h2 id=&quot;ie-的内核&quot;&gt;Ie 的内核&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-trident-内核&quot;&gt;1. Trident 内核&lt;/h3&gt;
+
+&lt;p&gt;IE、MaxThon、TT、The World、360、搜狗浏览器等。&lt;/p&gt;
+
+&lt;h2 id=&quot;其他浏览器内核&quot;&gt;其他浏览器内核&lt;/h2&gt;
+
+&lt;h3 id=&quot;2-gecko-内核&quot;&gt;2. Gecko 内核&lt;/h3&gt;
+
+&lt;p&gt;Firefox、MozillaSuite/SeaMonkey 等。&lt;/p&gt;
+
+&lt;h3 id=&quot;3-presto-内核&quot;&gt;3. Presto 内核&lt;/h3&gt;
+
+&lt;p&gt;Opera 前使用的内核，现为 Blink 内核;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-webkit-内核&quot;&gt;4. Webkit 内核&lt;/h3&gt;
+
+&lt;p&gt;Safari、Chrome 等。&lt;/p&gt;
+
+&lt;h3 id=&quot;5-blink-内核&quot;&gt;5. Blink 内核&lt;/h3&gt;
+
+&lt;p&gt;合并了 Webkit 和 Gecko 内核的浏览器内核。&lt;/p&gt;
+
+&lt;h1 id=&quot;2html5-新特性&quot;&gt;2.Html5 新特性&lt;/h1&gt;
+
+&lt;p&gt;自1999年以后HTML 4.01 已经改变了很多,今天，在HTML 4.01中的几个已经被废弃，这些元素在HTML5中已经被删除或重新定义。&lt;/p&gt;
+
+&lt;p&gt;为了更好地处理今天的互联网应用，HTML5添加了很多新元素及功能，比如:
+图形的绘制，多媒体内容，更好的页面结构，更好的形式
+处理，和几个api拖放元素，定位，包括网页
+应用程序缓存，存储，网络工作者，等。&lt;/p&gt;
+
+&lt;h2&gt;1. 新元素&lt;/h2&gt;
+&lt;table class=&quot;reference notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th align=&quot;left&quot; width=&quot;110&quot;&gt;标签&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-canvas.html&quot;&gt;&amp;lt;canvas&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt; 标签定义图形，比如图表和其他图像。该标签基于 JavaScript 的绘图 API&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2&gt;2. 新多媒体元素 &lt;/h2&gt;
+
+&lt;table class=&quot;reference&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th align=&quot;left&quot; width=&quot;110&quot;&gt;标签&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-audio.html&quot;&gt;&amp;lt;audio&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义音频内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-video.html&quot;&gt;&amp;lt;video&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义视频（video 或者 movie）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-source.html&quot;&gt;&amp;lt;source&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义多媒体资源 &amp;lt;video&amp;gt; 和 &amp;lt;audio&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-embed.html&quot;&gt;&amp;lt;embed&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义嵌入的内容，比如插件。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-track.html&quot;&gt;&amp;lt;track&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;为诸如 &amp;lt;video&amp;gt; 和 &amp;lt;audio&amp;gt; 元素之类的媒介规定外部文本轨道。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2&gt;3. 新表单元素 &lt;/h2&gt;
+&lt;table class=&quot;reference&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th align=&quot;left&quot; width=&quot;110&quot;&gt;标签&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-datalist.html&quot;&gt;&amp;lt;datalist&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-keygen.html&quot;&gt;&amp;lt;keygen&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;规定用于表单的密钥对生成器字段。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-output.html&quot;&gt;&amp;lt;output&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义不同类型的输出，比如脚本的输出。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2&gt;4. 新的语义和结构元素 &lt;/h2&gt;
+&lt;p&gt;HTML5提供了新的元素来创建更好的页面结构：&lt;/p&gt;
+&lt;table class=&quot;reference notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th align=&quot;left&quot; width=&quot;110&quot;&gt;标签&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-article.html&quot;&gt;&amp;lt;article&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义页面独立的内容区域。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-aside.html&quot;&gt;&amp;lt;aside&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义页面的侧边栏内容。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-bdi.html&quot;&gt;&amp;lt;bdi&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;允许您设置一段文本，使其脱离其父元素的文本方向设置。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-command.html&quot;&gt;&amp;lt;command&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义命令按钮，比如单选按钮、复选框或按钮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-details.html&quot;&gt;&amp;lt;details&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;用于描述文档或文档某个部分的细节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-dialog.html&quot;&gt;&amp;lt;dialog&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义对话框，比如提示框&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-summary.html&quot;&gt;&amp;lt;summary&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;标签包含 details 元素的标题&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-figure.html&quot;&gt;&amp;lt;figure&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;规定独立的流内容（图像、图表、照片、代码等等）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-figcaption.html&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义 &amp;lt;figure&amp;gt; 元素的标题&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-footer.html&quot;&gt;&amp;lt;footer&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义 section 或 document 的页脚。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-header.html&quot;&gt;&amp;lt;header&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义了文档的头部区域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-mark.html&quot;&gt;&amp;lt;mark&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义带有记号的文本。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-meter.html&quot;&gt;&amp;lt;meter&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义度量衡。仅用于已知最大和最小值的度量。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-nav.html&quot;&gt;&amp;lt;nav&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义导航链接的部分。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-progress.html&quot;&gt;&amp;lt;progress&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义任何类型的任务的进度。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-ruby.html&quot;&gt;&amp;lt;ruby&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义 ruby 注释（中文注音或字符）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-rt.html&quot;&gt;&amp;lt;rt&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义字符（中文注音或字符）的解释或发音。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-rp.html&quot;&gt;&amp;lt;rp&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;在 ruby 注释中使用，定义不支持 ruby 元素的浏览器所显示的内容。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-section.html&quot;&gt;&amp;lt;section&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义文档中的节（section、区段）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-time.html&quot;&gt;&amp;lt;time&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;定义日期或时间。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;/tags/tag-wbr.html&quot;&gt;&amp;lt;wbr&amp;gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;规定在文本中的何处适合添加换行符。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2&gt;5.已移除的元素 &lt;/h2&gt;
+&lt;p&gt;以下的 HTML 4.01 元素在HTML5中已经被删除:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;acronym&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;applet&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;basefont&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;big&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;center&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;dir&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;font&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;frame&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;frameset&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;noframes&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;strike&amp;gt;&lt;/li&gt;
+	&lt;li&gt;&amp;lt;tt&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 03 Jan 2024 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2024/01/03/2024/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024/01/03/2024/</guid>
         
         <category>Web</category>
         
@@ -1607,49 +1842,6 @@ not the case of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
         <pubDate>Tue, 05 May 2020 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2020/05/05/pl-chart/</link>
         <guid isPermaLink="true">http://localhost:4000/2020/05/05/pl-chart/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>为什么 CSS 这么难学？</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/66167982/answer/240434582&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;对我来说，CSS 难学以及烦人是因为它&lt;strong&gt;「出乎我意料之外的复杂」&lt;/strong&gt;且让我觉得&lt;strong&gt;「定位矛盾」&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;//www.zhihu.com/people/b90c7eb6d3d5a4e2ce453dd8ad377672&quot;&gt;@方应杭&lt;/a&gt; 老师的答案我赞了：CSS 的属性互不正交，大量的依赖与耦合难以记忆。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;//www.zhihu.com/people/596c0a5fdd9b36cea06bac348d418824&quot;&gt;@顾轶灵&lt;/a&gt; &lt;a href=&quot;//www.zhihu.com/people/c02ec74a44ee4a6784d002c33e293652&quot;&gt;@王成&lt;/a&gt; 说得也没错：CSS 的很多规则是贯彻整个体系的，而且都记在规范里了，是有规律的，你应该好好读文档而不是去瞎试。&lt;/p&gt;
-
-&lt;p&gt;「&lt;strong&gt;CSS是一门正儿八经的编程语言，请拿出你学C++或者Java的态度对待它&lt;/strong&gt;」&lt;/p&gt;
-
-&lt;p&gt;但是问题就在这了，无论从我刚学习前端还是到现在，我都没有把 CSS 作为一门正儿八经的编程语言（&lt;strong&gt;而且显然图灵不完全的它也不是&lt;/strong&gt;），CSS 在我眼里一直就是一个布局、定义视觉样式用的 DSL，与 HTML 一样就是一个标记语言。&lt;/p&gt;
-
-&lt;p&gt;写 CSS 很有趣，CSS 中像继承、类、伪类这样的设计确实非常迎合程序员的思路，各种排列组合带来了很多表达上的灵活性。但如果可以选择，在生产环境里我更愿意像 iOS/Android/Windows 开发那样，把这门 DSL 作为 IDE WYSIWYG 编辑器的编译目标就可以了，当然你可以直接编辑生成的代码，但我希望「对于同一种效果，有比较确定的 CSS 表达方式」&lt;/p&gt;
-
-&lt;p&gt;因为我并不在 CSS 里处理数据结构，写算法、业务逻辑啊，我就是希望我能很精确得表达我想要的视觉效果就可以了。如果我需要更复杂的灵活性和控制，你可以用真正的编程语言来给我暴露 API，而不是在 CSS 里给我更多的「表达能力」&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CSS 语言本身的表达能力对于布局 DSL 来说是过剩的&lt;/strong&gt;，所以你仅仅用 CSS 的一个很小的子集就可以在 React Native 里搞定 iOS/Android 的布局了。你会发现各个社区（典型如 React）、团队都要花很多时间去找自己项目适合的那个 CSS 子集（so called 最佳实践）。而且 CSS 的这种复杂度其实还挺严重得影响了浏览器的渲染性能，很多优化变得很难做。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;而 CSS 的表达能力对于编程语言来说又严重不够&lt;/strong&gt;，一是语言特性不够，所以社区才会青睐 Less、Sass 这些编译到 CSS 的语言，然后 CSS 自己也在加不痛不痒的 Variable。二是 API 不够，就算你把规范读了，你会发现底层 CSSOM 的 Layout、Rendering 的东西你都只能强行用声明式的方式去 hack（比如用 transform 开新的 composition layer）而没有真正的 API 可以用，所以 W3C 才会去搞 Houdini 出来。&lt;/p&gt;
-
-&lt;p&gt;这种不上不下的感觉就让我觉得很「矛盾」，你既没法把 CSS 当一个很简单的布局标记语言去使用，又没办法把它作为一个像样的编程语言去学习和使用。&lt;/p&gt;
-
-&lt;p&gt;在写 CSS 和 debug CSS 的时候我经常处在一种「MD 就这样吧反正下次还要改」和「MD 这里凭什么是这样的我要研究下」的精分状态，可是明明我写 CSS 最有成就感的时候是看到漂亮的 UI 啊。&lt;/p&gt;
-
-&lt;p&gt;以上。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 Oct 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/10/06/css-complaints/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/06/css-complaints/</guid>
-        
-        <category>Web</category>
-        
-        <category>CSS</category>
-        
-        <category>知乎</category>
         
         
       </item>
