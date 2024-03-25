@@ -5,8 +5,8 @@
     <description>这里是 @Moi黎子豪 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 07 Mar 2024 16:32:31 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Mar 2024 16:32:31 +0800</lastBuildDate>
+    <pubDate>Mon, 25 Mar 2024 16:26:09 +0800</pubDate>
+    <lastBuildDate>Mon, 25 Mar 2024 16:26:09 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -21,6 +21,357 @@
         <guid isPermaLink="true">http://localhost:4000/2034/06/12/Future/</guid>
         
         <category>life</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>如何搭建个人Cli脚手架(一)</title>
+        <description>&lt;h2 id=&quot;首先&quot;&gt;首先&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;首先，你需要一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Node.js&lt;/code&gt;环境，你可以通过&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvm&lt;/code&gt;来安装&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Node.js&lt;/code&gt;。&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;               nvm install node
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;其次，你需要一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm&lt;/code&gt;环境，你可以通过&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvm&lt;/code&gt;来安装&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm&lt;/code&gt;。&lt;/p&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;               nvm install npm
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;开始&quot;&gt;开始&lt;/h2&gt;
+
+&lt;p&gt;创建一个文件夹，并进入该文件夹,执行以下命令&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    npm init -y
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;你会获得一个 package 文件&lt;/p&gt;
+
+&lt;pre&gt;
+{
+  &quot;name&quot;: &quot;testcli&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+  }
+}
+&lt;/pre&gt;
+
+&lt;p&gt;创建一个 bin 文件夹,并且在此文件夹中创建一个 index.js 文件,输入以下代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;console.log(&quot;hello world&quot;);
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;然后在 package.json 中添加以下代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    &quot;bin&quot;: {
+        &quot;testcli&quot;: &quot;./bin/index.js&quot;
+    }
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在终端执行 npm link 命令，将你的脚手架链接到全局环境中&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    npm link
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在终端执行 testcli 命令，你将会看到控制台输出 “hello world”&lt;/p&gt;
+
+&lt;h2 id=&quot;安装依赖&quot;&gt;安装依赖&lt;/h2&gt;
+
+&lt;h3 id=&quot;commander&quot;&gt;commander&lt;/h3&gt;
+&lt;p&gt;在终端安装 commander&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    npm install commander --save
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;然后在 index.js 中添加以下代码&lt;/p&gt;
+
+&lt;pre&gt;
+#!/usr/bin/env node
+// 引入程序模块
+const {program} = require(&apos;commander&apos;)
+
+program.name(&apos;my-cli&apos;).usage(&apos;&lt;command /&gt; [options}&apos;)
+// 解析命令行参数
+program.parse(process.argv)
+&lt;/pre&gt;
+
+&lt;p&gt;在任意目录执行 testcli –help 命令，你将会看到以下帮助信息&lt;/p&gt;
+
+&lt;pre&gt;
+Usage: my-cli [command] [options]
+
+Options:
+  -V, --version  output the version number
+  -h, --help     display help for command
+
+Commands:   
+&lt;/pre&gt;
+
+&lt;p&gt;你也可以尝试添加如下选项代码&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;programprogram
+// 输出额外的调试信息
+.option(&apos;-d,debug&apos;,&apos;output extra debugging&apos;)
+
+// 小型披萨大小
+.option(&apos;-s,small&apos;,&apos;small pizza size&apos;)
+
+// 披萨类型
+.option(&apos;-p,--pizza-type &amp;lt;type&amp;gt;&apos;,&apos;flavour of pizza&apos;)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在任意终端输入 testcli –help 命令，你将会看到以下帮助信息&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;Usage: my-cli &amp;lt;command&amp;gt; [options}
+
+Options:
+  -d,debug                output extra debugging
+  -s,small                small pizza size
+  -p,--pizza-type &amp;lt;type&amp;gt;  flavour of pizza
+  -h, --help              display help for command
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;进行测试在index.js中添加以下代码&lt;/p&gt;
+&lt;pre&gt;
+const options = program.opts()
+console.log(options)
+&lt;/pre&gt;
+
+&lt;p&gt;在任意终端输入&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;testcli --debug --small --pizza-type &quot;cheese&quot; 
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;命令，你将会看到以下输出&lt;/p&gt;
+
+&lt;pre&gt;
+{ debug: true, small: true, pizzaType: &apos;cheese&apos; }
+&lt;/pre&gt;
+
+&lt;p&gt;创建一个command在index.js中添加以下代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    // 克隆一个仓库
+program
+.command(&apos;clone &amp;lt;source&amp;gt; [destination]&apos;)
+.description(&apos; clone a repository into a newly created directory &apos;)
+.action((source, destination) =&amp;gt; {
+  console.log(&apos;clone command called&apos;)
+})
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在任意终端输入 testcli –help 命令，你将会看到以下帮助信息&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    Usage: my-cli &amp;lt;command&amp;gt; [options}
+
+Options:
+  -d,debug                      output extra debugging
+  -s,small                      small pizza size
+  -p,--pizza-type &amp;lt;type&amp;gt;        flavour of pizza
+  -h, --help                    display help for command
+
+Commands:
+  clone &amp;lt;source&amp;gt; [destination]   clone a repository into a newly created directory
+  help [command]                display help for command
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;chalk&quot;&gt;chalk&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/chalk/chalk/386909ee0bfe4346d04e3eeba712f0db597c038d/media/logo.svg&quot; /&gt;
+在终端安装 chalk,因为我们此处用的是CommonJs模块
+我们此处用的是4.0.0版本&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    npm install chalk@4.0.0 --save
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;!!!&amp;lt;p style=&quot;color:red;&quot;&amp;gt;注释掉之前所用到的commander代码&amp;lt;/p&amp;gt;!!!&lt;/p&gt;
+
+&lt;p&gt;在 index.js 中添加以下代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;console.log(&apos;hello world&apos;)
+console.log(chalk.red(&apos;hello world&apos;))
+console.log(chalk.blue.bold(&apos;hello world&apos;))
+console.log(chalk.green.bgRed(&apos;hello world&apos;))
+
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;此时在任意终端输入 testcli 命令，你将会看到以下输出&lt;/p&gt;
+
+&lt;pre&gt;
+   &lt;p&gt;hello world&lt;/p&gt;
+   &lt;p style=&quot;color:red;&quot;&gt; hello world&lt;/p&gt;
+   &lt;p style=&quot;color:blue;&quot; bold=&quot;&quot;&gt; hello world&lt;/p&gt;
+   &lt;p style=&quot;color:green; background-color:red;&quot;&gt; hello world&lt;/p&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;inquirer&quot;&gt;inquirer&lt;/h2&gt;
+&lt;p&gt;安装 inquirer&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    npm install inquirer@8.0.0 --save
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在 index.js 中添加以下代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;const inquirer = require(&apos;inquirer&apos;)
+    inquirer
+.prompt([
+  {
+    type: &apos;input&apos;,
+    name: &apos;food&apos;,
+    message:&apos;what is your favorite food?&apos;,
+    default:&apos;burger&apos;
+  },
+  {
+    type: &apos;confirm&apos;,
+    name: &apos;hot&apos;,
+    message:&apos;are you sure?&apos;,
+    default:false
+  }
+])
+.then((answers) =&amp;gt; {
+  console.log(answers)
+})
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;此时在任意终端输入 testcli 命令，你将会看到以下输出&lt;/p&gt;
+
+&lt;pre&gt;
+   &lt;p&gt;what is your favorite food?&lt;/p&gt;
+   &lt;p&gt;are you sure?&lt;/p&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;ora&quot;&gt;ora&lt;/h2&gt;
+
+&lt;p&gt;安装 ora&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    npm install ora@5.4.1 --save
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在 index.js 中添加以下代码&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;    const ora = require(&apos;ora&apos;);
+    const spinner = ora(&apos;loading&apos;).start()
+setTimeout(() =&amp;gt; {
+  spinner.color = &apos;yellow&apos;
+  spinner.text = &apos;网络较慢...&apos;
+},3000)
+setTimeout(() =&amp;gt; {
+spinner.fail(&apos;下载失败&apos;)
+},4000)
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;此时在任意终端输入 testcli 命令，你将会看到以下输出&lt;/p&gt;
+
+&lt;pre&gt;
+   &lt;p&gt;loading&lt;/p&gt;
+   &lt;p&gt;网络较慢...&lt;/p&gt;
+   &lt;p&gt;下载失败&lt;/p&gt;
+&lt;/pre&gt;
+</description>
+        <pubDate>Fri, 22 Mar 2024 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2024/03/22/2024/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024/03/22/2024/</guid>
+        
+        <category>Web</category>
+        
+        <category>JavaScript</category>
+        
+        <category>taliwind</category>
+        
+        <category>cli</category>
+        
+        <category>脚手架</category>
+        
+        <category>命令行</category>
         
         
       </item>
@@ -1830,18 +2181,6 @@ not the case of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&
         <category>C</category>
         
         <category>C++</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>My Programming Languages Spectrum</title>
-        <description>&lt;iframe id=&quot;chart&quot; src=&quot;https://huangxuan.me/PL-chart/&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;width: 100%&quot;&gt;
-&lt;/iframe&gt;
-</description>
-        <pubDate>Tue, 05 May 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2020/05/05/pl-chart/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/05/05/pl-chart/</guid>
         
         
       </item>

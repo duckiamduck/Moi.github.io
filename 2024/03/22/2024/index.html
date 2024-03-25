@@ -12,13 +12,13 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="箭头函数与普通函数的区别 - 黎子豪的博客">
+        content="如何搭建个人Cli脚手架(一) - 黎子豪的博客">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="箭头函数（Arrow Function）与普通函数（Regular Function）在语法和功能上有一些区别。
+    <meta property="og:description" content="首先
 ">
     
-    <meta property="article:published_time" content=" 2023-11-04T00:00:00Z">
+    <meta property="article:published_time" content=" 2024-03-22T00:00:00Z">
     
     
     <meta property="article:author" content="黎子豪">
@@ -28,12 +28,20 @@
     
     <meta property="article:tag" content="JavaScript">
     
+    <meta property="article:tag" content="taliwind">
+    
+    <meta property="article:tag" content="cli">
+    
+    <meta property="article:tag" content="脚手架">
+    
+    <meta property="article:tag" content="命令行">
+    
     
     <meta property="og:image" content="http://localhost:4000https://avatars.githubusercontent.com/u/102943240?s=400&u=ee753adb0657d117778affa79d076a878894feb4&v=4">
-    <meta property="og:url" content="http://localhost:4000/2023/11/04/2023/">
+    <meta property="og:url" content="http://localhost:4000/2024/03/22/2024/">
     <meta property="og:site_name" content="黎子豪的博客">
 
-    <title>箭头函数与普通函数的区别 - 黎子豪的博客</title>
+    <title>如何搭建个人Cli脚手架(一) - 黎子豪的博客</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -42,7 +50,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2023/11/04/2023/">
+    <link rel="canonical" href="http://localhost:4000/2024/03/22/2024/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -241,11 +249,19 @@
                         
                         <a class="tag" href="/archive/?tag=JavaScript" title="JavaScript">JavaScript</a>
                         
+                        <a class="tag" href="/archive/?tag=taliwind" title="taliwind">taliwind</a>
+                        
+                        <a class="tag" href="/archive/?tag=cli" title="cli">cli</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E8%84%9A%E6%89%8B%E6%9E%B6" title="脚手架">脚手架</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E5%91%BD%E4%BB%A4%E8%A1%8C" title="命令行">命令行</a>
+                        
                     </div>
-                    <h1>箭头函数与普通函数的区别</h1>
+                    <h1>如何搭建个人Cli脚手架(一)</h1>
                     
                     <h2 class="subheading"></h2>
-                    <span class="meta">Posted by 黎子豪 on November 4, 2023</span>
+                    <span class="meta">Posted by 黎子豪 on March 22, 2024</span>
                 </div>
             </div>
         </div>
@@ -272,49 +288,352 @@
                 <!-- Multi-Lingual -->
                 
 
-				<h1>箭头函数（Arrow Function）与普通函数（Regular Function）在语法和功能上有一些区别。</h1>
+				<h2 id="首先">首先</h2>
 
-<ol>
+<ul>
+  <li>
+    <p>首先，你需要一个<code class="language-plaintext highlighter-rouge">Node.js</code>环境，你可以通过<code class="language-plaintext highlighter-rouge">nvm</code>来安装<code class="language-plaintext highlighter-rouge">Node.js</code>。</p>
 
-<li>语法简洁性：箭头函数使用箭头（`=&gt;`）来定义函数，语法更加简洁，可以省略`function`关键字和大括号。例如：
- <pre>
- <code>
- // 普通函数
- function add(a, b) {
- return a + b;
- }
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>               nvm install node
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>其次，你需要一个<code class="language-plaintext highlighter-rouge">npm</code>环境，你可以通过<code class="language-plaintext highlighter-rouge">nvm</code>来安装<code class="language-plaintext highlighter-rouge">npm</code>。</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>               nvm install npm
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ul>
 
- // 箭头函数
- const add = (a, b) =&gt; a + b;
- </code>
- </pre>
-</li>
-<li>
- this 绑定：箭头函数没有自己的 `this` 值，它会捕获当前上下文的 `this` 值，即定义时所在的对象或函数。而普通函数的 `this` 值在运行时根据调用方式动态确定。箭头函数也不支持call()与apply()函数特性。
-</li>
-<li> arguments 对象：箭头函数没有自己的 `arguments` 对象，但可以使用剩余参数（rest parameters）来达到类似的效果。普通函数则有自己的 `arguments` 对象。</li>
-<li> 箭头函数不能用作构造函数（constructor）或生成器函数（generator function）。</li>
-<li> 箭头函数没有原型属性（prototype property）。</li>
- </ol>
-<h4>总的来说，箭头函数适用于简单的函数表达式和回调函数的定义，具有简洁的语法和固定的上下文绑定；而普通函数则适用于更复杂的函数逻辑、作为构造函数和对象方法等场景，具有更多的语法特性和灵活性。</h4>
+<h2 id="开始">开始</h2>
 
+<p>创建一个文件夹，并进入该文件夹,执行以下命令</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>    npm init -y
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>你会获得一个 package 文件</p>
+
+<pre>
+{
+  "name": "testcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
+</pre>
+
+<p>创建一个 bin 文件夹,并且在此文件夹中创建一个 index.js 文件,输入以下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>console.log("hello world");
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后在 package.json 中添加以下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    "bin": {
+        "testcli": "./bin/index.js"
+    }
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在终端执行 npm link 命令，将你的脚手架链接到全局环境中</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>    npm link
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在终端执行 testcli 命令，你将会看到控制台输出 “hello world”</p>
+
+<h2 id="安装依赖">安装依赖</h2>
+
+<h3 id="commander">commander</h3>
+<p>在终端安装 commander</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>    npm install commander --save
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后在 index.js 中添加以下代码</p>
+
+<pre>
+#!/usr/bin/env node
+// 引入程序模块
+const {program} = require('commander')
+
+program.name('my-cli').usage('<command /> [options}')
+// 解析命令行参数
+program.parse(process.argv)
+</pre>
+
+<p>在任意目录执行 testcli –help 命令，你将会看到以下帮助信息</p>
+
+<pre>
+Usage: my-cli [command] [options]
+
+Options:
+  -V, --version  output the version number
+  -h, --help     display help for command
+
+Commands:   
+</pre>
+
+<p>你也可以尝试添加如下选项代码</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>programprogram
+// 输出额外的调试信息
+.option('-d,debug','output extra debugging')
+
+// 小型披萨大小
+.option('-s,small','small pizza size')
+
+// 披萨类型
+.option('-p,--pizza-type &lt;type&gt;','flavour of pizza')
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在任意终端输入 testcli –help 命令，你将会看到以下帮助信息</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>Usage: my-cli &lt;command&gt; [options}
+
+Options:
+  -d,debug                output extra debugging
+  -s,small                small pizza size
+  -p,--pizza-type &lt;type&gt;  flavour of pizza
+  -h, --help              display help for command
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>进行测试在index.js中添加以下代码</p>
+<pre>
+const options = program.opts()
+console.log(options)
+</pre>
+
+<p>在任意终端输入</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>testcli --debug --small --pizza-type "cheese" 
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>命令，你将会看到以下输出</p>
+
+<pre>
+{ debug: true, small: true, pizzaType: 'cheese' }
+</pre>
+
+<p>创建一个command在index.js中添加以下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>    // 克隆一个仓库
+program
+.command('clone &lt;source&gt; [destination]')
+.description(' clone a repository into a newly created directory ')
+.action((source, destination) =&gt; {
+  console.log('clone command called')
+})
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在任意终端输入 testcli –help 命令，你将会看到以下帮助信息</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>    Usage: my-cli &lt;command&gt; [options}
+
+Options:
+  -d,debug                      output extra debugging
+  -s,small                      small pizza size
+  -p,--pizza-type &lt;type&gt;        flavour of pizza
+  -h, --help                    display help for command
+
+Commands:
+  clone &lt;source&gt; [destination]   clone a repository into a newly created directory
+  help [command]                display help for command
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="chalk">chalk</h3>
+
+<p><img src="https://raw.githubusercontent.com/chalk/chalk/386909ee0bfe4346d04e3eeba712f0db597c038d/media/logo.svg" />
+在终端安装 chalk,因为我们此处用的是CommonJs模块
+我们此处用的是4.0.0版本</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>    npm install chalk@4.0.0 --save
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>!!!&lt;p style="color:red;"&gt;注释掉之前所用到的commander代码&lt;/p&gt;!!!</p>
+
+<p>在 index.js 中添加以下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>console.log('hello world')
+console.log(chalk.red('hello world'))
+console.log(chalk.blue.bold('hello world'))
+console.log(chalk.green.bgRed('hello world'))
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>此时在任意终端输入 testcli 命令，你将会看到以下输出</p>
+
+<pre>
+   <p>hello world</p>
+   <p style="color:red;"> hello world</p>
+   <p style="color:blue;" bold=""> hello world</p>
+   <p style="color:green; background-color:red;"> hello world</p>
+</pre>
+
+<h2 id="inquirer">inquirer</h2>
+<p>安装 inquirer</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>    npm install inquirer@8.0.0 --save
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在 index.js 中添加以下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>const inquirer = require('inquirer')
+    inquirer
+.prompt([
+  {
+    type: 'input',
+    name: 'food',
+    message:'what is your favorite food?',
+    default:'burger'
+  },
+  {
+    type: 'confirm',
+    name: 'hot',
+    message:'are you sure?',
+    default:false
+  }
+])
+.then((answers) =&gt; {
+  console.log(answers)
+})
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>此时在任意终端输入 testcli 命令，你将会看到以下输出</p>
+
+<pre>
+   <p>what is your favorite food?</p>
+   <p>are you sure?</p>
+</pre>
+
+<h2 id="ora">ora</h2>
+
+<p>安装 ora</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>    npm install ora@5.4.1 --save
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在 index.js 中添加以下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>    const ora = require('ora');
+    const spinner = ora('loading').start()
+setTimeout(() =&gt; {
+  spinner.color = 'yellow'
+  spinner.text = '网络较慢...'
+},3000)
+setTimeout(() =&gt; {
+spinner.fail('下载失败')
+},4000)
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>此时在任意终端输入 testcli 命令，你将会看到以下输出</p>
+
+<pre>
+   <p>loading</p>
+   <p>网络较慢...</p>
+   <p>下载失败</p>
+</pre>
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2023/10/12/string-number/" data-toggle="tooltip" data-placement="top" title="Javascript中的数组">
+                        <a href="/2024/01/10/2024/" data-toggle="tooltip" data-placement="top" title="我对2024前端的看法">
                         Previous<br>
-                        <span>Javascript中的数组</span>
+                        <span>我对2024前端的看法</span>
                         </a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2023/11/05/2024/" data-toggle="tooltip" data-placement="top" title="vue-router细讲">
+                        <a href="/2034/06/12/Future/" data-toggle="tooltip" data-placement="top" title="对未来的自己的要求">
                         Next<br>
-                        <span>vue-router细讲</span>
+                        <span>对未来的自己的要求</span>
                         </a>
                     </li>
                     
@@ -444,8 +763,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "hux";
-    var disqus_identifier = "/2023/11/04/2023";
-    var disqus_url = "http://localhost:4000/2023/11/04/2023/";
+    var disqus_identifier = "/2024/03/22/2024";
+    var disqus_url = "http://localhost:4000/2024/03/22/2024/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
