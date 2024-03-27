@@ -9,6 +9,22 @@
     } ,
   
     {
+      "title"    : "美化vscode",
+      "subtitle" : "",
+      "tags"     : "vscode",
+      "url"      : "/2024/03/27/%E7%BE%8E%E5%8C%96vscode.2024/",
+      "date"     : "2024-03-27 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "学习tailwind",
+      "subtitle" : "",
+      "tags"     : "css, tailwind, daily, vite, vue",
+      "url"      : "/2024/03/27/tailwindcss.2024/",
+      "date"     : "2024-03-27 00:00:00 +0800"
+    } ,
+  
+    {
       "title"    : "如何搭建个人Cli脚手架(一)",
       "subtitle" : "",
       "tags"     : "Web, JavaScript, taliwind, cli, 脚手架, 命令行",

@@ -12,29 +12,34 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="我对2024前端的看法 - 黎子豪的博客">
+        content="学习tailwind - 黎子豪的博客">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="React、Vue 和 Angular 这些老牌框架依然稳居前端开发主力军的位置，不过它们也都在不断更新迭代，加入新的功能和特性，比如 React 18 中的 Concurrent Mode、Vue 3 中的 Composition API 等等。
-同时，一些新兴框架也正在崛起，比如 Svelte、Solid 等，它们凭借着轻量、高效的特点吸引了不少开发者的关注，或许在未来会成为新的主流选择。
+    <meta property="og:description" content="学习 tailwind -入门
 ">
     
-    <meta property="article:published_time" content=" 2024-01-10T00:00:00Z">
+    <meta property="article:published_time" content=" 2024-03-27T00:00:00Z">
     
     
     <meta property="article:author" content="黎子豪">
     
     
-    <meta property="article:tag" content="Web">
+    <meta property="article:tag" content="css">
     
-    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="tailwind">
+    
+    <meta property="article:tag" content="daily">
+    
+    <meta property="article:tag" content="vite">
+    
+    <meta property="article:tag" content="vue">
     
     
     <meta property="og:image" content="http://localhost:4000https://avatars.githubusercontent.com/u/102943240?s=400&u=ee753adb0657d117778affa79d076a878894feb4&v=4">
-    <meta property="og:url" content="http://localhost:4000/2024/01/10/2024/">
+    <meta property="og:url" content="http://localhost:4000/2024/03/27/tailwindcss.2024/">
     <meta property="og:site_name" content="黎子豪的博客">
 
-    <title>我对2024前端的看法 - 黎子豪的博客</title>
+    <title>学习tailwind - 黎子豪的博客</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -43,7 +48,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2024/01/10/2024/">
+    <link rel="canonical" href="http://localhost:4000/2024/03/27/tailwindcss.2024/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -79,8 +84,8 @@
 
     <!-- Navigation -->
 
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert" >
-    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top touch">
+        
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -211,7 +216,7 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-futuer.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 
@@ -220,7 +225,7 @@
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/home-bg.jpg');
+        background-image: url('/img/post-bg-futuer.jpg');
         background: ;
     }
 
@@ -230,7 +235,7 @@
 
 
 
-<header class="intro-header style-text" >
+<header class="intro-header" >
 
     <div class="header-mask"></div>
     
@@ -240,15 +245,21 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=Web" title="Web">Web</a>
+                        <a class="tag" href="/archive/?tag=css" title="css">css</a>
                         
-                        <a class="tag" href="/archive/?tag=JavaScript" title="JavaScript">JavaScript</a>
+                        <a class="tag" href="/archive/?tag=tailwind" title="tailwind">tailwind</a>
+                        
+                        <a class="tag" href="/archive/?tag=daily" title="daily">daily</a>
+                        
+                        <a class="tag" href="/archive/?tag=vite" title="vite">vite</a>
+                        
+                        <a class="tag" href="/archive/?tag=vue" title="vue">vue</a>
                         
                     </div>
-                    <h1>我对2024前端的看法</h1>
+                    <h1>学习tailwind</h1>
                     
                     <h2 class="subheading"></h2>
-                    <span class="meta">Posted by 黎子豪 on January 10, 2024</span>
+                    <span class="meta">Posted by 黎子豪 on March 27, 2024</span>
                 </div>
             </div>
         </div>
@@ -275,46 +286,219 @@
                 <!-- Multi-Lingual -->
                 
 
-				<p>React、Vue 和 Angular 这些老牌框架依然稳居前端开发主力军的位置，不过它们也都在不断更新迭代，加入新的功能和特性，比如 React 18 中的 Concurrent Mode、Vue 3 中的 Composition API 等等。
-同时，一些新兴框架也正在崛起，比如 Svelte、Solid 等，它们凭借着轻量、高效的特点吸引了不少开发者的关注，或许在未来会成为新的主流选择。</p>
+				<h2 id="学习-tailwind--入门">学习 tailwind -入门</h2>
 
-<p>此外，Web Components 等标准化技术也将得到更广泛的应用，这将有利于提高代码的复用性和可维护性。
-TypeScript 的使用也将更加普及，它可以帮助我们提高代码的类型安全性，避免一些潜在的错误。</p>
+<p>这篇文章主要就是用来学习 tailwindcss，但是过程可能会有点散乱，因为是在学习的项目的过程中学的。</p>
 
-<p>1 全栈和服务端渲染：
-随着前端技术的不断发展，前端开发人员的能力也越来越强，他们不再局限于前端页面开发，而是开始向后端甚至是全栈开发方向发展。
-服务端渲染 (SSR) 也是近年来一个比较热门的技术，它可以将页面在服务器端渲染成 HTML 代码，然后再发送给客户端，这样可以提高页面加载速度，并改善 SEO 效果
-。</p>
+<h3 id="首先">首先</h3>
 
-<p>2 人工智能和低代码开发：
-人工智能 (AI) 正在逐渐渗透到各个领域，前端开发也不例外。一些 AI 工具可以帮助我们自动生成代码、优化性能等等，提高开发效率。
-低代码/无代码开发平台也越来越流行，它们可以降低开发门槛，使更多人能够参与前端开发，这对于非技术人员来说是一个福音。</p>
+<p>tailwindcss 是一个 css 框架，它提供了一系列的 css 类，这些类可以用来快速地生成常见的 css 样式，例如字体大小、颜色、边框等。
+我们先通过 create vite 来创建 vite 项目，推荐使用 cnpm 或者 pnpm 这里我们使用 npm。</p>
 
-<p>3 性能和可访问性：
-性能优化一直是前端开发的重要关注点，我们希望能够提供更加流畅的用户体验。
-可访问性也是一个不容忽视的问题，我们需要确保所有用户都能使用我们的前端应用，包括残障人士。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>npm creat vite
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>4 安全性和隐私：
-随着网络攻击的不断增加，安全问题也越来越重要，我们需要采取必要的措施来保护我们的应用免受攻击。
-用户隐私也是一个需要重视的问题，我们需要遵守相关法律法规，保护用户隐私。</p>
+<p>project 名我们取 tailwind+vite 就行了，大家可以随便取。</p>
 
+<p>framework 我们选择 Vue，variant 我们选择 JavaScript，对于入门学习 js 最好。</p>
+
+<p>打开 vscode 选择文件夹</p>
+
+<p>安装必要的依赖</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>cnpm i
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后我们安装 tailwindcss 和 postcss autoprefixer</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>cnpm i tailwindcss postcss autoprefixer -D
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>进行初始化</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>  npx tailwindcss init -p
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>此时会出现两个额外的文件
+Created Tailwind CSS config file: tailwind.config.js
+Created PostCSS config file: postcss.config.js</p>
+
+<p>我们对 tailwind.config.js 进行配置</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>  /** @type {import('tailwindcss').Config} */
+export default {
+  content: [ 
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>清除没必要的 src 下的代码
+删除 compoents 文件夹
+App.vue 下的代码如下</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre>  &lt;script setup&gt;
+
+&lt;/script&gt;
+
+&lt;template&gt;
+
+&lt;/template&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>如果没有错误删除 src 下面应该有个 style.css 文件，没有的话可以创建一个。初始化该文件，写入如下代码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>在App.vue文件中测试</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+</pre></td><td class="rouge-code"><pre>  
+&lt;template&gt;
+  &lt;div class="bg-white"&gt;
+    &lt;div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"&gt;
+      &lt;h2 class="text-2xl font-bold tracking-tight text-gray-900"&gt;Customers also purchased&lt;/h2&gt;
+
+      &lt;div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"&gt;
+        &lt;div v-for="product in products" :key="product.id" class="group relative"&gt;
+          &lt;div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"&gt;
+            &lt;img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center lg:h-full lg:w-full" /&gt;
+          &lt;/div&gt;
+          &lt;div class="mt-4 flex justify-between"&gt;
+            &lt;div&gt;
+              &lt;h3 class="text-sm text-gray-700"&gt;
+                &lt;a :href="product.href"&gt;
+                  &lt;span aria-hidden="true" class="absolute inset-0" /&gt;
+                  
+                &lt;/a&gt;
+              &lt;/h3&gt;
+              &lt;p class="mt-1 text-sm text-gray-500"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p class="text-sm font-medium text-gray-900"&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script setup&gt;
+const products = [
+  {
+    id: 1,
+    name: 'Basic Tee',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$35',
+    color: 'Black',
+  },
+  // More products...
+]
+&lt;/script&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2024/01/03/2024/" data-toggle="tooltip" data-placement="top" title="面试题">
+                        <a href="/2024/03/22/2024/" data-toggle="tooltip" data-placement="top" title="如何搭建个人Cli脚手架(一)">
                         Previous<br>
-                        <span>面试题</span>
+                        <span>如何搭建个人Cli脚手架(一)</span>
                         </a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2024/03/22/2024/" data-toggle="tooltip" data-placement="top" title="如何搭建个人Cli脚手架(一)">
+                        <a href="/2024/03/27/%E7%BE%8E%E5%8C%96vscode.2024/" data-toggle="tooltip" data-placement="top" title="美化vscode">
                         Next<br>
-                        <span>如何搭建个人Cli脚手架(一)</span>
+                        <span>美化vscode</span>
                         </a>
                     </li>
                     
@@ -444,8 +628,8 @@ TypeScript 的使用也将更加普及，它可以帮助我们提高代码的类
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "hux";
-    var disqus_identifier = "/2024/01/10/2024";
-    var disqus_url = "http://localhost:4000/2024/01/10/2024/";
+    var disqus_identifier = "/2024/03/27/tailwindcss.2024";
+    var disqus_url = "http://localhost:4000/2024/03/27/tailwindcss.2024/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
